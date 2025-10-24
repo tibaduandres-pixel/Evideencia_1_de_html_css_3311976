@@ -1,0 +1,31 @@
+---
+import { string } from 'astro:schema'
+
+// Definimos las propiedades
+//que pueda recibir el componene
+interface Props {
+    etiqueta: string;
+  
+}
+
+//crear una variaeble
+//para recibir etiqueta
+//Astr.prop=los valores desde
+//    el control
+const {etiqueta} = Astro.props;
+
+---
+
+<!--
+etiqueta input:
+se utiliza para los siguientes 
+controles:
+-Campo
+-password
+-chckbox
+-radio button
+boton de envio
+ES ETIQUETA CERRADA
+-->
+<label >{ etiqueta }:</label>
+<input />
