@@ -1,0 +1,16 @@
+---
+interface Props {
+    etiqueta: string;
+  
+}
+const {etiqueta} = Astro.props;
+---
+<label>{etiqueta}</label>
+<select>
+    <option>Cali</option>
+    <option>Bogota</option>
+    <option>Medellin</option>
+    <option>Huila</option>
+    <option>Pasto</option>
+    <option>Ibague</option>
+</select>
