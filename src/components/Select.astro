@@ -7,10 +7,45 @@ const {etiqueta} = Astro.props;
 ---
 <label>{etiqueta}</label>
 <select>
-    <option>Cali</option>
-    <option>Bogota</option>
-    <option>Medellin</option>
-    <option>Huila</option>
-    <option>Pasto</option>
-    <option>Ibague</option>
+    <option id="cali">Cali</option>
+    <option id="bogota">Bogota</option>
+    <option id="medellin">Medellin</option>
+    <option id="huila">Huila</option>
+    <option id="pasto">Pasto</option>
+    <option id="ibague">Ibague</option>
 </select>
+<style>
+    /* estilo de identificador*/
+    /*solo aplica a etiquetas*/
+    /*que tenga atributos id */
+    /*con el mismo nombre de id */
+    /*NOTA:soñño debe haber un id igual*/
+    /*EN TODA PAGINA*/
+    #bogota {
+        color: red;
+    }
+        select{
+        border: 2px yellow dotted;
+        }
+    
+    #cali {
+        color: darkorange;
+    }
+        select{
+        border: 2px cadetblue;
+    }
+
+    #medellin {
+        color: deeppink;
+    }
+        select{
+            border: 2px seagreen;
+        }
+    #huila {
+        color: rebeccapurple;
+    }
+        select{
+            border: 2px cornflowerblue;
+        }
+
+</style>
